@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #f5f5f5;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: auto 1fr auto; /* 1fr for the remaining area */
+  /* gap: 10px; */
+}
+
+body > * {
+  font-size: 20px;
+  color: #fff;
+  text-align: left;
+  background-color: steelblue;
+  border: 1px solid skyblue;
+  padding: 20px;
+}
+
+header {
+  grid-column: 1 / 4;
+}
+
+nav {
+  grid-row: 2 / 4;
+}
+
+footer {
+  grid-column: 2 / 4;
+}

@@ -1,0 +1,20 @@
+Grid container properties:-
+
+1. grid-template-rows
+2. grid-template-columns
+3. grid-template-areas
+4. align-items
+5. justify-content
+6. column-gap
+7. row-gap
+8. gap
+
+*---------*
+
+Grid items properties:-
+
+1. align-self
+2. justify-self
+3. grid-column
+4. grid-row
+5. grid-area

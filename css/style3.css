@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #f5f5f5;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  display: grid;
+  grid-template-areas:
+  /* any keyword can be used */
+    "header header header"
+    "nav content sidebar"
+    "nav footer footer";
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: auto 1fr auto;
+}
+
+body > * {
+  font-size: 20px;
+  color: #fff;
+  text-align: left;
+  background-color: steelblue;
+  border: 1px solid skyblue;
+  padding: 20px;
+}
+
+/* Creating grid areas */
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: content;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+footer {
+  grid-area: footer;
+}
